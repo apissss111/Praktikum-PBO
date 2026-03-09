@@ -1,6 +1,5 @@
-# Praktikum-PBO
-Sistem Jasa Pengelolaan Event Volunteer
-Deskripsi Program
+# Sistem Jasa Pengelolaan Event Volunteer
+Deskripsi Program :
 Program ini dibuat menggunakan bahasa Java untuk mengelola data volunteer pada sebuah event. Program menggunakan konsep CRUD (Create, Read, Update, Delete) dengan struktur data ArrayList.
 
 Fitur Program
