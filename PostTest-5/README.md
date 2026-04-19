@@ -1,7 +1,7 @@
 # Posttest 5 OOP - Abstract Class & Interface
 
 ## Deskripsi
-Pada posttest ini, program dari pertemuan sebelumnya dikembangkan dengan mengubah class induk menjadi abstract class dan menambahkan interface.
+Pada posttest ini, program dari tugas sebelumnya dikembangkan dengan mengubah class induk menjadi abstract class dan menambahkan interface.
 
 Perubahan dilakukan tanpa mengubah alur utama program, jadi fitur yang sudah ada tetap berjalan seperti sebelumnya.
 
