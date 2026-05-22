@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Admin Mode</h1>
+
+<div style="text-align: right;">
+    <button onclick="logout()">Logout</button>
+</div>
+<br>
+    <section class="card">
+        <h2>Form Booth</h2>
+
+        <form id="booth-form">
+            <div class="form-group">
+                <label>Nama Booth</label>
+                <input id="namaBooth" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Lokasi</label>
+                <input id="lokasi" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Harga</label>
+                <input id="harga" type="number" required>
+            </div>
+
+            <div class="form-actions">
+                <button class="button button--primary">Simpan</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Daftar Booth</h2>
+        <div id="hasil"></div>
+    </section>
+
+</div>
+
+<script src="admin.js"></script>
+
+<script>
+function logout() {
+    localStorage.removeItem("role");
+    localStorage.removeItem("username");
+
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
