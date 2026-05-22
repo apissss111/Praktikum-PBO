@@ -23,7 +23,7 @@ public class AuthController {
         String username = data.get("username");
         String password = data.get("password");
 
-        // ADMIN FIX
+        // ADMIN 
         if (username.equals("admin") && password.equals("admin123")) {
             return "admin";
         }
