@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pelanggan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Pelanggan Booth</h1>
+
+    <div style="text-align:right;">
+    <button class="button button--secondary" onclick="logout()">
+        Logout
+    </button>
+</div>
+
+    <!-- FORM PESAN -->
+    <section class="card">
+
+        <h2>Pesan Booth</h2>
+
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" id="namaUser">
+        </div>
+
+        <div class="form-group">
+            <label>Pilih Booth</label>
+            <select id="boothSelect"></select>
+        </div>
+
+        <div class="form-group">
+            <label>Tanggal</label>
+            <input type="date" id="tanggal">
+        </div>
+
+        <div class="form-actions">
+            <button class="button button--primary" onclick="pesan()">Pesan</button>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- BOOTH LIST -->
+    <h2>Booth Tersedia</h2>
+    <div id="listBooth"></div>
+
+    <hr>
+
+    <!-- RIWAYAT -->
+    <h2>Riwayat Pemesanan</h2>
+    <div id="riwayat"></div>
+
+</div>
+
+<script src="pelanggan.js"></script>
+
+<script>
+function logout() {
+    localStorage.removeItem("role");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

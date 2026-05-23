@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Booth Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Admin Mode</h1>
+
+    <!-- LOGOUT -->
+    <div style="text-align: right;">
+        <button class="button button--secondary" onclick="logout()">
+            Logout
+        </button>
+    </div>
+
+    <br>
+
+    <!-- FORM BOOTH -->
+    <section class="card">
+        <h2>Tambah Booth</h2>
+
+        <form id="booth-form">
+
+            <div class="form-group">
+                <label>Nama Booth</label>
+                <input id="namaBooth" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Lokasi</label>
+                <input id="lokasi" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Harga</label>
+                <input id="harga" type="number" min="0" required>
+                <small class="muted">Harga berupa angka </small>
+            </div>
+
+            <div class="form-actions">
+                <button class="button button--primary" type="submit">
+                    Simpan Booth
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- LIST BOOTH -->
+    <section class="card">
+        <h2>Daftar Booth</h2>
+        <div id="hasil"></div>
+    </section>
+
+    <!-- RIWAYAT PEMESANAN  -->
+    <section class="card">
+        <h2>Riwayat Pemesanan</h2>
+        <div id="riwayat"></div>
+    </section>
+
+</div>
+
+<script src="admin.js"></script>
+
+<script>
+function logout() {
+    localStorage.removeItem("role");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
